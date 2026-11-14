@@ -389,6 +389,58 @@ h3 {
   background: var(--paper);
 }
 
+.certifications {
+  background: var(--pale);
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  min-height: 210px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.certificate-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 18px;
+  display: block;
+  object-fit: contain;
+  background: #fff;
+}
+
+.certificate-provider {
+  margin-bottom: 18px;
+  color: var(--green-light);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.certificate-card h3 {
+  margin-bottom: 22px;
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+.certificate-card a {
+  margin-top: auto;
+  color: var(--green-light);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -734,6 +786,10 @@ a.contact-item:hover > span:nth-child(2) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .certificate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .skill-group:nth-child(3) {
     padding-left: 0;
     border-left: 0;
@@ -852,6 +908,10 @@ a.contact-item:hover > span:nth-child(2) {
   }
 
   .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-grid {
     grid-template-columns: 1fr;
   }
 
