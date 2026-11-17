@@ -35,134 +35,191 @@
       </nav>
     </header>
 
-    <main>
+    <main class="contact-page">
+      <section class="contact-callout" aria-labelledby="callout-title">
+        <div class="contact-callout-copy">
+          <p class="contact-callout-tag">
+            <span aria-hidden="true">↗</span> Freelance &amp; contract inquiries
+          </p>
+          <h1 id="callout-title">Need a developer for your next project?</h1>
+          <p>
+            Let’s turn your idea into a reliable, modern digital product.
+            Available for web development, e-commerce platforms, and
+            full-stack applications.
+          </p>
+        </div>
+        <div class="contact-callout-actions">
+          <a class="contact-cta-primary" href="mailto:mdmayen.ght@gmail.com">
+            Email Me <span aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-cta-secondary" href="#contact-details">
+            Direct Contact
+          </a>
+        </div>
+      </section>
+
       <section
-        class="contact section"
-        id="contact"
+        class="contact-workspace"
+        id="contact-details"
         aria-labelledby="contact-title"
       >
-        <div class="section-inner contact-inner">
-          <div class="contact-heading">
-            <h1 id="contact-title">Contact <span>Me</span></h1>
-          </div>
-          <div class="contact-layout">
-            <div class="contact-intro">
-              <a class="contact-brand" href="index.html" aria-label="Md. Mayen, home">
-                <span class="logo-hex" aria-hidden="true">M</span>
-                <span>Md. Mayen</span>
-              </a>
-              <p class="contact-description">
-                Have a project in mind? I build modern web applications and
-                e-commerce experiences, and help businesses grow through
-                performance marketing. Let’s talk.
-              </p>
-              <nav class="contact-socials" aria-label="Contact links">
-                <a href="tel:+8801568769466" aria-label="Call Md. Mayen">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="m7.1 3.5 2.3 3.3-1.4 1.4a13.3 13.3 0 0 0 5.8 5.8l1.4-1.4 3.3 2.3-.7 3.1a1.8 1.8 0 0 1-2 1.4C8.5 18.3 5.7 15.5 4.6 8.2A1.8 1.8 0 0 1 6 6.2z" />
-                  </svg>
-                </a>
-                <a href="mailto:mdmayen.ght@gmail.com" aria-label="Email Md. Mayen">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <rect x="3.5" y="5.5" width="17" height="13" rx="1.5" />
-                    <path d="m4.5 7 7.5 5.5L19.5 7" />
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com/AlgoForgeMS"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub profile"
-                ><span class="contact-social-text">GH</span></a>
-                <a
-                  href="https://linkedin.com/in/mdmayen-dev"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn profile"
-                ><span class="contact-social-text">in</span></a>
-                <a
-                  href="https://maps.google.com/?q=Dhaka,Bangladesh"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Location: Dhaka, Bangladesh"
-                >
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19 10.2c0 5-7 10.3-7 10.3S5 15.2 5 10.2a7 7 0 1 1 14 0Z" />
-                    <circle cx="12" cy="10" r="2.2" />
-                  </svg>
-                </a>
-              </nav>
-            </div>
+        <div class="contact-copy-column">
+          <p class="contact-kicker">Contact &amp; collaboration</p>
+          <h2 id="contact-title">Have an idea? Let’s build it together.</h2>
+          <p class="contact-intro">
+            Whether you need a modern website, a full-stack application, or
+            growth support, I’d love to hear about your project.
+          </p>
 
-            <form
-              class="contact-form"
-              id="contact-form"
-              action="mailto:mdmayen.ght@gmail.com"
-              method="post"
-              enctype="text/plain"
-            >
-              <div class="contact-form-grid">
-                <label class="contact-field">
-                  <span class="visually-hidden">First name</span>
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
-                    autocomplete="given-name"
-                    required
-                  />
-                </label>
-                <label class="contact-field">
-                  <span class="visually-hidden">Last name</span>
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                    autocomplete="family-name"
-                    required
-                  />
-                </label>
-                <label class="contact-field">
-                  <span class="visually-hidden">Phone</span>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone"
-                    autocomplete="tel"
-                  />
-                </label>
-                <label class="contact-field">
-                  <span class="visually-hidden">Subject</span>
-                  <input type="text" name="subject" placeholder="Subject" />
-                </label>
-                <label class="contact-field contact-field-full">
-                  <span class="visually-hidden">Email</span>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    autocomplete="email"
-                    required
-                  />
-                </label>
-                <label class="contact-field contact-field-full">
-                  <span class="visually-hidden">Message</span>
-                  <textarea
-                    name="message"
-                    placeholder="Message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </label>
-                <button class="contact-submit contact-field-full" type="submit">
-                  Submit
-                </button>
-              </div>
-              <p class="contact-form-note">
-                Submitting opens your email app to send the message.
-              </p>
-            </form>
+          <h3 class="contact-subheading">Direct channels</h3>
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <span class="contact-channel-icon contact-channel-email" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3.5" y="5.5" width="17" height="13" rx="1.5" />
+                  <path d="m4.5 7 7.5 5.5L19.5 7" />
+                </svg>
+              </span>
+              <a class="contact-channel-copy" href="mailto:mdmayen.ght@gmail.com">
+                <span>Email</span>
+                <strong>mdmayen.ght@gmail.com</strong>
+              </a>
+              <button
+                class="contact-copy"
+                type="button"
+                data-copy="mdmayen.ght@gmail.com"
+                data-label="Email"
+                aria-label="Copy email address"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="8" y="8" width="12" height="12" rx="2" />
+                  <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+                </svg>
+              </button>
+            </div>
+            <div class="contact-channel">
+              <span class="contact-channel-icon contact-channel-phone" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m7.1 3.5 2.3 3.3-1.4 1.4a13.3 13.3 0 0 0 5.8 5.8l1.4-1.4 3.3 2.3-.7 3.1a1.8 1.8 0 0 1-2 1.4C8.5 18.3 5.7 15.5 4.6 8.2A1.8 1.8 0 0 1 6 6.2z" />
+                </svg>
+              </span>
+              <a class="contact-channel-copy" href="tel:+8801568769466">
+                <span>Phone / WhatsApp</span>
+                <strong>+88015-68769466</strong>
+              </a>
+              <button
+                class="contact-copy"
+                type="button"
+                data-copy="+88015-68769466"
+                data-label="Phone number"
+                aria-label="Copy phone number"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="8" y="8" width="12" height="12" rx="2" />
+                  <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+                </svg>
+              </button>
+            </div>
           </div>
+          <p class="contact-copy-status" id="contact-copy-status" aria-live="polite"></p>
+
+          <div class="contact-social-grid">
+            <a
+              class="contact-social-card"
+              href="https://github.com/syntax-ghost0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true">GH</span>
+              <span><strong>GitHub</strong><small>syntax-ghost0</small></span>
+            </a>
+            <a
+              class="contact-social-card"
+              href="https://linkedin.com/in/mdmayen-dev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true">in</span>
+              <span><strong>LinkedIn</strong><small>mdmayen-dev</small></span>
+            </a>
+            <a
+              class="contact-social-card contact-location-card"
+              href="https://maps.google.com/?q=Dhaka,Bangladesh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true">⌖</span>
+              <span><strong>Location</strong><small>Dhaka, Bangladesh</small></span>
+            </a>
+          </div>
+
+          <p class="contact-availability">
+            <strong>Open for:</strong> collaborations, full-stack development,
+            e-commerce, and client projects.
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send a Direct Message</h3>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="mailto:mdmayen.ght@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="contact-form-grid">
+              <label class="contact-field">
+                <span class="visually-hidden">Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name *"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+              <label class="contact-field">
+                <span class="visually-hidden">Your email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email *"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+              <label class="contact-field contact-field-full">
+                <span class="visually-hidden">Subject</span>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject *"
+                  required
+                />
+              </label>
+              <label class="contact-field contact-field-full">
+                <span class="visually-hidden">Message</span>
+                <textarea
+                  name="message"
+                  placeholder="Tell me about your project scope, requirements, or opportunity... *"
+                  rows="5"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <div class="contact-form-actions">
+              <button class="contact-submit" type="submit">
+                Send Message <span aria-hidden="true">➤</span>
+              </button>
+              <a class="contact-mail-link" href="mailto:mdmayen.ght@gmail.com">
+                <span aria-hidden="true">✉</span> Open in Mail App
+              </a>
+            </div>
+            <p class="contact-form-note">
+              Submitting opens your email app with the message ready to send.
+            </p>
+          </form>
         </div>
       </section>
     </main>
