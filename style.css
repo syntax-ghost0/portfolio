@@ -85,28 +85,53 @@ h3 {
 .site-header nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 10px;
   color: var(--ink);
   font-size: 13px;
   font-weight: 600;
 }
 
+.site-header nav a {
+  min-height: 40px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgb(24 60 51 / 18%);
+}
+
 .site-header nav a:not(.nav-contact):hover,
+.site-header nav a:not(.nav-contact):focus-visible,
 .site-footer a:hover {
+  border-color: var(--line);
+  background: var(--pale);
   color: var(--red);
 }
 
-.nav-contact {
-  display: inline-flex;
-  align-items: center;
+.site-header nav .nav-contact {
   gap: 9px;
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  color: var(--ink);
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
 }
 
-.nav-contact:hover {
-  border-color: var(--ink);
+.site-header nav .nav-contact:hover,
+.site-header nav .nav-contact:focus-visible {
+  border-color: var(--green-light);
+  background: var(--green-light);
+  color: var(--paper);
 }
 
 .hero {
@@ -857,7 +882,7 @@ a.contact-item:hover > span:nth-child(2) {
   }
 
   .site-header nav {
-    gap: 16px;
+    gap: 4px;
     font-size: 12px;
   }
 
@@ -866,8 +891,8 @@ a.contact-item:hover > span:nth-child(2) {
     display: none;
   }
 
-  .nav-contact {
-    padding: 9px 10px;
+  .site-header nav .nav-contact {
+    padding: 0 10px;
   }
 
   .hero {
