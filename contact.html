@@ -42,57 +42,127 @@
         aria-labelledby="contact-title"
       >
         <div class="section-inner contact-inner">
-          <div class="contact-intro">
-            <p class="section-index">Contact</p>
-            <h2 id="contact-title">
-              Let’s build something<br /><span
-                >that moves business forward.</span
-              >
-            </h2>
-            <p>
-              Open to technical collaborations, full-stack projects, and client
-              inquiries.
-            </p>
-            <a class="button button-lime" href="mailto:contact@mdmayen.com"
-              >Start a conversation <span aria-hidden="true">↗</span></a
-            >
+          <div class="contact-heading">
+            <h1 id="contact-title">Contact <span>Me</span></h1>
           </div>
-          <address class="contact-details">
-            <a class="contact-item" href="mailto:contact@mdmayen.com">
-              <span class="contact-label">Email</span>
-              <span>mdmayen.ght@gmail.com</span>
-              <span class="contact-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="contact-item" href="tel:+8801700000000">
-              <span class="contact-label">Phone</span>
-              <span>+88015-68769466</span>
-              <span class="contact-arrow" aria-hidden="true">↗</span>
-            </a>
-            <p class="contact-item contact-location">
-              <span class="contact-label">Location</span>
-              <span>Dhaka, Bangladesh</span>
-            </p>
-            <a
-              class="contact-item"
-              href="https://github.com/AlgoForgeMS"
-              target="_blank"
-              rel="noreferrer"
+          <div class="contact-layout">
+            <div class="contact-intro">
+              <a class="contact-brand" href="index.html" aria-label="Md. Mayen, home">
+                <span class="logo-hex" aria-hidden="true">M</span>
+                <span>Md. Mayen</span>
+              </a>
+              <p class="contact-description">
+                Have a project in mind? I build modern web applications and
+                e-commerce experiences, and help businesses grow through
+                performance marketing. Let’s talk.
+              </p>
+              <nav class="contact-socials" aria-label="Contact links">
+                <a href="tel:+8801568769466" aria-label="Call Md. Mayen">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m7.1 3.5 2.3 3.3-1.4 1.4a13.3 13.3 0 0 0 5.8 5.8l1.4-1.4 3.3 2.3-.7 3.1a1.8 1.8 0 0 1-2 1.4C8.5 18.3 5.7 15.5 4.6 8.2A1.8 1.8 0 0 1 6 6.2z" />
+                  </svg>
+                </a>
+                <a href="mailto:mdmayen.ght@gmail.com" aria-label="Email Md. Mayen">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="5.5" width="17" height="13" rx="1.5" />
+                    <path d="m4.5 7 7.5 5.5L19.5 7" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/AlgoForgeMS"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub profile"
+                ><span class="contact-social-text">GH</span></a>
+                <a
+                  href="https://linkedin.com/in/mdmayen-dev"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn profile"
+                ><span class="contact-social-text">in</span></a>
+                <a
+                  href="https://maps.google.com/?q=Dhaka,Bangladesh"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Location: Dhaka, Bangladesh"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 10.2c0 5-7 10.3-7 10.3S5 15.2 5 10.2a7 7 0 1 1 14 0Z" />
+                    <circle cx="12" cy="10" r="2.2" />
+                  </svg>
+                </a>
+              </nav>
+            </div>
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="mailto:mdmayen.ght@gmail.com"
+              method="post"
+              enctype="text/plain"
             >
-              <span class="contact-label">GitHub</span>
-              <span>github.com/mdmayen-dev</span>
-              <span class="contact-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a
-              class="contact-item"
-              href="https://linkedin.com/in/mdmayen-dev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact-label">LinkedIn</span>
-              <span>linkedin.com/in/md-mayen-5b7025447</span>
-              <span class="contact-arrow" aria-hidden="true">↗</span>
-            </a>
-          </address>
+              <div class="contact-form-grid">
+                <label class="contact-field">
+                  <span class="visually-hidden">First name</span>
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    autocomplete="given-name"
+                    required
+                  />
+                </label>
+                <label class="contact-field">
+                  <span class="visually-hidden">Last name</span>
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    autocomplete="family-name"
+                    required
+                  />
+                </label>
+                <label class="contact-field">
+                  <span class="visually-hidden">Phone</span>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone"
+                    autocomplete="tel"
+                  />
+                </label>
+                <label class="contact-field">
+                  <span class="visually-hidden">Subject</span>
+                  <input type="text" name="subject" placeholder="Subject" />
+                </label>
+                <label class="contact-field contact-field-full">
+                  <span class="visually-hidden">Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+                <label class="contact-field contact-field-full">
+                  <span class="visually-hidden">Message</span>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </label>
+                <button class="contact-submit contact-field-full" type="submit">
+                  Submit
+                </button>
+              </div>
+              <p class="contact-form-note">
+                Submitting opens your email app to send the message.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -106,5 +176,25 @@
       <p>© 2026 Md. Mayen</p>
     </footer>
 
+    <script>
+      const contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        const subject = formData.get("subject") || "Portfolio inquiry";
+        const body = [
+          `Name: ${formData.get("firstName")} ${formData.get("lastName")}`,
+          `Email: ${formData.get("email")}`,
+          `Phone: ${formData.get("phone") || "Not provided"}`,
+          "",
+          formData.get("message"),
+        ].join("\n");
+
+        window.location.href =
+          `mailto:mdmayen.ght@gmail.com?subject=${encodeURIComponent(subject)}` +
+          `&body=${encodeURIComponent(body)}`;
+      });
+    </script>
   </body>
 </html>
